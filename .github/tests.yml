@@ -1,0 +1,44 @@
+name: QA Automation Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout do projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Instalar dependências Playwright
+        run: |
+          npm install
+          npx playwright install
+
+      - name: Rodar testes Playwright
+        run: npx playwright test
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Instalar dependências Python
+        run: |
+          pip install behave
+          pip install requests
+          pip install faker
+
+      - name: Rodar testes de API
+        run: behave

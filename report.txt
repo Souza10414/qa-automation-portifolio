@@ -1,0 +1,22 @@
+Feature: Testes da API de usuários # features/users.feature:1
+
+  Scenario: Buscar usuário                     # features/users.feature:3
+    Given que tenho a API para buscar usuários # steps/api_steps.py:41
+    When envio uma requisição GET              # steps/api_steps.py:46
+    Then o status da busca deve ser 200        # steps/api_steps.py:51
+
+  Scenario: Criar usuário                     # features/users.feature:9
+    Given que tenho a API para criar usuários # steps/api_steps.py:14
+    When envio uma requisição POST            # steps/api_steps.py:19
+    Then o status da criação deve ser 201     # steps/api_steps.py:32
+
+  Scenario: Atualizar usuário                     # features/users.feature:15
+    Given que tenho a API para atualizar usuários # steps/api_steps.py:60
+    When envio uma requisição PUT                 # steps/api_steps.py:65
+    Then o status da atualização deve ser 200     # steps/api_steps.py:78
+
+  Scenario: Deletar usuário                     # features/users.feature:21
+    Given que tenho a API para deletar usuários # steps/api_steps.py:87
+    When envio uma requisição DELETE            # steps/api_steps.py:92
+    Then o status da deleção deve ser 200       # steps/api_steps.py:97
+
