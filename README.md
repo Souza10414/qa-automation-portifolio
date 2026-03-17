@@ -7,9 +7,7 @@ Projeto de automação de testes desenvolvido para demonstrar habilidades em tes
 - Playwright
 - Python
 - Behave (BDD)
-- Requests
 - Faker
-- GitHub Actions
 
 # Estrutura do projeto
 
