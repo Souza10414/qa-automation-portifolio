@@ -13,21 +13,20 @@ Projeto de automação de testes desenvolvido para demonstrar habilidades em tes
 
 # Estrutura do projeto
 
-QA-AUTOMATION-PORTIFOLIO
-│
-├ features
-│ users.feature
-│
-├ steps
-│ api_steps.py
-│
-├ mobile-tests-playwright
-│ pages
-│ tests
-│ utils
-│
-└ playwright.config.js
-
+```
+qa-automation-portifolio/
+├── features/
+│   └── users.feature
+├── steps/
+│   └── api_steps.py
+├── mobile-tests-playwright/
+│   ├── pages/
+│   ├── tests/
+│   ├── utils/
+│   └── playwright.config.js
+├── README.md
+├── report.txt
+```
 
 # Tipos de testes implementados
 
@@ -75,4 +74,4 @@ npx playwright test
 
 # Autor
 
-Wellison Souza Oliveira 
+Wellison Souza Oliveira
