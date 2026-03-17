@@ -4,7 +4,7 @@ Projeto de automação de testes desenvolvido para demonstrar habilidades em tes
 
 # Tecnologias utilizadas
 
-- Playwright
+- Playwright com JavaScript
 - Python
 - Behave (BDD)
 - Faker
